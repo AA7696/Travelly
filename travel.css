@@ -1,0 +1,342 @@
+/*Basic styling*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+h1{
+    font-size: 2.6rem;
+}
+li,
+button,
+label,
+input,
+p{
+    font-size: 2rem;
+}
+h2{
+    font-size: 4.8rem;
+
+}
+h3{
+    font-size: 3rem;
+    font-weight: normal;
+}
+h4,h5{
+    font-size: 2.8rem;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+button{
+    padding: 1rem 2rem;
+    background: #1116116b;
+    color: rgb(223, 204, 204);
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+/* nav section with hero*/
+
+.main-head{
+    background: rgb(9, 7, 12);
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    
+}
+nav{
+    min-height:  10vh;
+    display: flex;
+     width: 90%;
+    margin: auto;
+    padding: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+nav ul{
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+#logo{
+    flex: 2 1 40rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.hero{
+    min-height: 90vh;
+    background-image: url(/pexels-marlon-martinez-1450082.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(8, 1, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+   
+
+
+}
+
+
+
+
+
+
+
+ /*location section*/
+
+#location{
+    min-height: 100vh;
+    background-image: url(/pexels-chris-schippers-421927.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    
+}
+.location-head{
+    width: 90%;
+    margin: auto;
+    color: rgba(4, 14, 12, 0.979);
+}
+.location-head h2{
+    padding: 1rem 0rem;
+    text-decoration: underline;
+    padding-top: 3rem;
+
+
+
+}
+#text{
+    margin-top: 5rem;
+    
+}
+
+.plane{
+    position: relative;
+    animation: planeAnimation 5s infinite ease-in-out;
+}
+
+@keyframes planeAnimation {
+    from{
+        transform: translate(0%,0%);
+    }
+    to{
+        transform: translate(600%,-100%);
+    }
+    
+}
+
+
+
+.cloud{
+    position: absolute;
+    top: -1%;
+    right: 0%;
+}
+.moving-cloud-1{
+    animation: cloudAnimation 5s infinite alternate ease-in-out ;
+}
+.moving-cloud-2{
+    animation: cloud2Animation 6s infinite alternate ease-in-out ;
+}
+
+@keyframes cloudAnimation {
+   from{
+       transform: translate(30%,30% );
+   }
+   to{
+       transform: translate(0%,0%);
+   }
+}
+@keyframes cloud2Animation {
+    from{
+        transform: translate(35%,-20%);
+    }
+    to{
+        transform: translate(0%,0%);
+    }
+ }
+
+
+/*benifits*/
+
+
+.benifit-head{
+    background: #343c44;
+    padding: 3rem;
+    min-height: 30vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.benifit-head h3{
+    padding: 1rem;
+}
+.benifit-head h2{
+    margin-top: 4.5rem;
+}
+.cards{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    text-align: center;
+    background-color: white;
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.card-icon{
+    background: #42678b;
+}
+.card img{
+    max-width: 20%;
+    margin: 2rem;
+}
+.card h4{
+    padding: 1rem;
+}
+.card p{
+    padding: 1rem;
+}
+
+
+/*contact section*/
+
+
+#contact{
+    min-height: 100vh;
+    background: url(/pexels-eberhard-grossgasteiger-673020.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-wrapper{
+    background: rgba(19, 27, 54, 0.733);
+    width: 60%;
+    color: white;
+    border-radius: 20px;
+
+    
+
+}
+.form-head{
+    text-align: center;
+    padding: 4rem;
+}
+.name-form,.email-form{
+    text-align: center;
+    padding: 3rem;
+}
+.form-wrapper label{
+    margin: 0rem 3rem;
+}
+.form-wrapper button{
+    width: 100%;
+    padding: 1.2rem;
+    margin-top: 8rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(64, 161, 226, 0.692);
+}
+.form-wrapper input{
+    padding: 1rem 3rem;
+}
+
+/* footer */
+
+footer{
+    color: white;
+    background-color: rgba(19, 28, 39, 1);
+}
+.footer-wrapper{
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+
+}
+footer h5{
+    flex: 1 1 40rem;
+}
+footer ul{
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+ /*media query*/
+
+
+@media screen and (max-width:932px){
+    html{
+        font-size: 45%;
+    }
+    nav{
+      text-align: center;
+    }
+    #logo{
+        padding: 2rem;
+    }
+    .form-wrapper{
+        width: 100%;
+    }
+    footer{
+        text-align: center;
+    }
+    footer h5{
+        padding-bottom: 2rem;
+    }
+    
+}
+@media screen and (max-width:818px){
+    .cloud{
+        height: 10rem;
+    }
+    .moving-cloud-1{
+        z-index: -1;
+    }
+    .moving-cloud-2{
+        z-index: -2;
+    }
+    .plane{
+        display: none;
+    }
+}
